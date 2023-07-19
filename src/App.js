@@ -12,7 +12,8 @@ import './App.css';
 import { Footer } from './Components/Footer';
 import { HomePage } from './Components/HomePage';
 import { Cart } from './Components/Cart';
-import AddressForm from './Components/Checkout/AddressForm';
+import { CheckoutForm } from './Components/CheckoutForm';
+// import AddressForm from './Components/Checkout/AddressForm';
 
 export const App = () => {
   return (
@@ -27,7 +28,8 @@ export const App = () => {
               <Route path='/' element={<HomePage />} />
               <Route path='/merch' element={<Products />} /> 
               <Route path='/cart' element={<Cart />} />
-              <Route path='/placeorder' element={<AddressForm />} />
+              <Route path='/placeorder' element={<CheckoutForm />} />
+              {/* <Route path='/placeorder' element={<AddressForm />} /> */}
             </Routes>
             <Footer />
           </UIProvider>
