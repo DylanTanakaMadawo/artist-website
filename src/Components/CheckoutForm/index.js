@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FormContainer, FormHouse, SubmitButton } from "../../Styles";
 import { FormInput } from "./FormInput";
 
@@ -9,9 +9,9 @@ export const CheckoutForm = () => {
     PhysicalAddress: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
@@ -42,10 +42,33 @@ export const CheckoutForm = () => {
   ];
 
   console.log(values);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_fuzvw03",
+        "template_gv4220m",
+        form.current,
+        "7-QExdKo3fcylX58Y"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <FormContainer>
       <FormHouse>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={sendEmail}>
           <h1>Fill in Below: </h1>
           {inputs.map((input) => (
             <FormInput
