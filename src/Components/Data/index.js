@@ -1,7 +1,7 @@
 export const PRODUCTS = [
   {
     id: 1,
-    name: "NIKE SNEAKERS",
+    name: "NIKE_SNEAKERS",
     image: "/clothingstoreimages/niketrainors.png",
     price: 40,
     discount: 12,
@@ -15,14 +15,14 @@ export const PRODUCTS = [
   },
   {
     id: 3,
-    name: "MEROON T-SHIRT",
+    name: "MEROON_T-SHIRT",
     image: "/clothingstoreimages/maroontee.png",
     price: 25,
     discount: 10,
   },
   {
     id: 4,
-    name: "BLACK CAP",
+    name: "BLACK_CAP",
     image: "/clothingstoreimages/blackcap.png",
     price: 4.99,
     discount: 12,
@@ -43,7 +43,7 @@ export const PRODUCTS = [
   },
   {
     id: 7,
-    name: "MEROON T-SHIRT",
+    name: "MEROON_T-SHIRT",
     image: "/clothingstoreimages/maroontee.png",
     price: 25,
     discount: 10,

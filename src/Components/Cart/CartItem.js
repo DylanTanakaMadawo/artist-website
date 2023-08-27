@@ -65,6 +65,7 @@ export const CartItem = (props) => {
         <input
           style={{
             width: "40px",
+            height: "5px",
             textAlign: "center",
             fontWeight: "bolder",
           }}

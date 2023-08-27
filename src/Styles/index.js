@@ -59,6 +59,7 @@ export const DesktopAppbarContainer = styled(Box)(() => ({
   position: "sticky",
   top: 0,
   zIndex: 1001,
+  borderBottom: "1px solid grey",
 }));
 
 export const DesktopHeader = styled(Box)(() => ({

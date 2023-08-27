@@ -22,7 +22,7 @@ export const DesktopAppbar = () => {
           }}
           er
         >
-          <Header>LABEL NAME</Header>
+          <Header>DOLLARNATION</Header>
         </Link>
       </DesktopHeader>
       <DesktopNavs>
