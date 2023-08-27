@@ -78,7 +78,7 @@ export const MyForm = () => {
           </h2>
         </div>
         <div className="form-house">
-          <h1>Fill Form Below</h1>
+          {/* <h1>Fill Form Below</h1> */}
           <form className="my-form" ref={form} onSubmit={sendEmail}>
             <input
               type="text"

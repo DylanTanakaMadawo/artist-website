@@ -42,7 +42,7 @@ export const Cart = () => {
               marginTop: "20px",
               color: "white",
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "space-around",
             }}
           >
             <Box
@@ -57,8 +57,10 @@ export const Cart = () => {
                 ${totalAmount}
               </TypographyLato>
             </Box>
-            <DownloadStream to="/placeorder">Place Order</DownloadStream>
-            <DownloadStream to="/merch">Continue Shopping</DownloadStream>
+            <div className="cart-btns">
+              <DownloadStream to="/placeorder">Place Order</DownloadStream>
+              <DownloadStream to="/merch">Continue Shopping</DownloadStream>
+            </div>
           </Container>
           {/* <DownloadStream
                         onClick={() => {totalAmount = 0}}

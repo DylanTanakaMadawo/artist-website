@@ -250,7 +250,7 @@ export const HomePageImage = styled("img")(({ src }) => ({
   width: "100%",
 }));
 
-export const DownloadStream = styled(Link)(() => ({
+export const DownloadStream = styled(Link)(({ theme }) => ({
   textDecoration: "none",
   height: "30px",
   width: "120px",
@@ -264,6 +264,9 @@ export const DownloadStream = styled(Link)(() => ({
   backgroundColor: "black",
   fontWeight: "bold",
   fontSize: "12px",
+  // [theme.breakpoints.down("sm")]: {
+
+  // },
 }));
 
 export const HomePageNavbar = styled(Box)(() => ({
