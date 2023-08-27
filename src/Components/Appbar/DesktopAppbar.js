@@ -28,7 +28,8 @@ export const DesktopAppbar = () => {
       <DesktopNavs>
         <NavLinks>
           <Link
-            to="music"
+            to="https://www.youtube.com/@dollarboi_international"
+            target="_blank"
             style={{
               textDecoration: "none",
               color: "black",
@@ -39,7 +40,8 @@ export const DesktopAppbar = () => {
             MUSIC
           </Link>
           <Link
-            to="videos"
+            to="https://www.youtube.com/@dollarboi_international"
+            target="_blank"
             style={{
               textDecoration: "none",
               color: "black",
