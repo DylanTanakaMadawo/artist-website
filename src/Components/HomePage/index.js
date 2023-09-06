@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { HomePageNavs } from "../HomePageNavs";
 
 import { Divider, useMediaQuery, useTheme } from "@mui/material";
+import { UpcomingEvents } from "../UpcomingEvents/UpcomingEvents";
 
 export const HomePage = () => {
   const theme = useTheme();
@@ -28,13 +29,14 @@ export const HomePage = () => {
         ) : (
           <></>
         )}
-        <TheHeader>" Album Name "</TheHeader>
+        <TheHeader>" LONG TIME "</TheHeader>
         <HomePageImageContainer>
-          <HomePageImage src="/musicimages/doncover.jpg" />
+          <HomePageImage src="/musicimages/longtime.jpeg" />
           <ButtonContainer>
             <ButtonLinksContainer>
               <Link
-                to="/"
+                to="https://www.youtube.com/@dollarboi_international/"
+                target="_blank"
                 style={{
                   textDecoration: "none",
                   color: "black",
@@ -47,7 +49,7 @@ export const HomePage = () => {
           </ButtonContainer>
         </HomePageImageContainer>
       </HomePageContainer>
-
+      <UpcomingEvents />
       <Divider
         sx={{
           backgroundColor: "grey",

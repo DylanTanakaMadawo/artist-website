@@ -89,9 +89,9 @@ export const MyForm = () => {
 
             {PRODUCTS.map((product) => {
               if (cartItems[product.id] !== 0) {
-                ordered_products += `${cartItems[product.id]}x${
+                ordered_products += `${cartItems[product.id]} x ${
                   product.name
-                }_$${product.price} \n`;
+                } - $${product.price} \n`;
                 console.log(ordered_products);
                 return (
                   <>
@@ -116,7 +116,7 @@ export const MyForm = () => {
               required
             />
             <textarea
-              placeholder="Enter Physical Address"
+              placeholder="Enter Delivery Address"
               // name="message"
               onChange={(e) => setMessage(e.target.value)}
               cols="30"

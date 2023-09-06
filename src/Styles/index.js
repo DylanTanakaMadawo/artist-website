@@ -29,7 +29,7 @@ export const AppbarCartMobile = styled(Box)(() => ({
 }));
 
 export const AppDrawerContentList = styled(List)(() => ({
-  height: "150px",
+  height: "70vh",
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -304,6 +304,7 @@ export const ButtonContainer = styled(Box)(() => ({
   justifyContent: "center",
   alignItems: "center",
   marginTop: "20px",
+  marginBottom: "200px",
 }));
 
 //----------------------------CART------------------------------

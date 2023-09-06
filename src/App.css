@@ -8,6 +8,10 @@
 .MuiInputLabel-root {
   color: white !important;
 }
+
+.a-tag {
+  scroll-behavior: smooth !important;
+}
 /*
 .App-logo {
   height: 40vmin;
